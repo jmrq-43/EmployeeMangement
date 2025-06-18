@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:EmployeeManagement"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ControlTemplate x:Key="ButtonTemplate" TargetType="Button" >
+            <Border BorderBrush="Black" BorderThickness="3" Height="30" Width="200"/>
+        </ControlTemplate>
     </Application.Resources>
 </Application>
