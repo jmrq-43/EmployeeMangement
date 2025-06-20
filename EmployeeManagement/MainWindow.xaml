@@ -36,11 +36,44 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button
-                Grid.Row="1"
-                Height="30"
-                Width="200">
-            </Button>
+            <Grid Grid.Row="0">
+                <TextBox
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    BorderBrush="Black"
+                    BorderThickness="3"
+                    Margin="10,90,0,0"
+                    Height="30"
+                    Width="300"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Button
+                    Margin="20"
+                    Content="Guardar"
+                    Template="{StaticResource ButtonTemplate}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left">
+                </Button>
+                <Button
+                    Margin="20"
+                    Content="Eliminar"
+                    Template="{StaticResource ButtonTemplate}"
+                    VerticalAlignment="Center">
+                </Button>
+                <Button
+                    Margin="20"
+                    Content="Buscar"
+                    Template="{StaticResource ButtonTemplate}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right">
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Border BorderBrush="Black"
+             BorderThickness="1,0,0,0"
+             Margin="5"
+             />
         </Grid>
     </Grid>
 </Window>
