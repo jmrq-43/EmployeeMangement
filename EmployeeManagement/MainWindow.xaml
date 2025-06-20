@@ -69,5 +69,11 @@
                 </Button>
             </Grid>
         </Grid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Border BorderBrush="Black"
+             BorderThickness="1,0,0,0"
+             Margin="5"
+             />
+        </Grid>
     </Grid>
 </Window>
